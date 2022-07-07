@@ -11,10 +11,14 @@ public class Ejercicio2 {
         System.out.println("PRECIO TOTAL + IVA: " + precioTotal);
 
     }
-    //funcion que recibe el precio y devuelve el precio + IVA
-    static double aplicarImpuesto(double precio){
-      
-        return precio * 1.21;
+    
+     /**
+     * funcion que aplica el impuesto
+     * @param precio del producto
+     * @return precio tatal mas IVA redondeado a dos decimales
+     */
+    static double aplicarImpuesto(double precio) {
+        return Math.round(precio * 1.21) ;
     }
 
 }
